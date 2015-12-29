@@ -9,7 +9,7 @@ import (
 	"github.com/lewgun/web-seed/pkg/config"
 
 	//model
-	"github.com/lewgun/web-seed/pkg/model"
+	//"github.com/lewgun/web-seed/pkg/model"
 
 	//logger
 	"github.com/lewgun/web-seed/pkg/zlog"
@@ -101,13 +101,13 @@ func mustPrepare() (*config.Config, mySession.MySQLStore) {
 	if err != nil {
 		panic(err)
 	}
-
+/*
 	// model
 	m := model.SharedInstance(c.DSN, 100)
 	if m == nil {
 		panic("can't boot up storage.")
 	}
-
+*/
 	store, err := mySession.NewMySQLStore(c.DSN, 3600, "something very secret")
 	if err != nil {
 		panic(err)

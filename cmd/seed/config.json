@@ -1,0 +1,16 @@
+{
+  "database": {
+    "dbname":   "passport",
+    "ip":       "192.168.200.12",
+    "port":     3306,
+    "user":     "",
+    "password": ""
+  },
+
+  "webserver": {
+    "port": 8081,
+    "prefix": "/zer0to0ne",
+    "run_mode": "debug"
+  }
+
+}
